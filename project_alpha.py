@@ -87,9 +87,10 @@ elif answer.lower().strip() == "escape":
         print()
         print("Deciding not to risk it you leave your crew member.\n")
         print("The officers arrest "+str(random_crew1)+ "." )
+        print()
         user_crew.remove(random_crew1)
         print("You then see the officers rushing towards you with their guns aiming staright at you. \n")
-        print("You grab the straped bag containing some of the money off of the floor and place it on yours.Causing some of the money to spill from the bag. \n")
+        print("You grab the straped bag containing some of the money off of the floor and place it on your shoulder.Causing some of the money to spill from the bag. \n")
         print("Having no time to retrieve it, you do the only thing you can think of, you run, trying to make it back to your remaining crew members waiting for you by the get away car out back. \n")
         A = Amount()
         A.subtract(random.randrange(10000,500000))
@@ -97,7 +98,7 @@ elif answer.lower().strip() == "escape":
         print(A.get_result())
         print()
         print()
-        print("You get meet your remaining members near the getaway car out the back.\n")
+        print("You meet your remaining members near the getaway car out the back.\n")
         print("You can choose to be the driver or keep the plice at bay. \n")
         print("what will it be?  \n")
         answer = input("Type: drive or stop. \n")
@@ -105,8 +106,8 @@ elif answer.lower().strip() == "escape":
         if answer.lower().strip() == "drive":
             print()
             print("You get into the drivers seat, and start maneuvering between cars on the highway in an attempt to lose the police.\n")
-            print("Suddenly the back windows break , due to the constant bullets being shot.\n" )
-            print("This causes more money to be sucked up from the open duffel bags and fall onto the highway. \n")
+            print("Suddenly the back windows break , due to the constant bullets being shot from the police.\n" )
+            print("This causes more money to be sucked up from the open duffel bags, out the open window and onto the highway. \n")
             A.subtract(random.randrange(10000,500000))
             print("Money Now: \n")
             print(A.get_result())
@@ -136,6 +137,7 @@ elif answer.lower().strip() == "escape":
                 exit()
 
         elif answer.lower().strip() == "stop" :
+            print()
             print("You take up the mantel of firing at the police from the sunroof.\n")
             print("Not realizing that doing this exposes most of your upper body you are shot on your shoulder, the same shoulder that the duffel bag is strapped too. \n")
             print("This causes the duffel bag to fall from your shoulder to the highway below.\n")
@@ -170,6 +172,7 @@ elif answer.lower().strip() == "escape":
 
     elif answer.lower().strip() == "save":
         user_crew.remove(random_crew1)
+        print()
         print("You go back and attempt to save them.\n")
         print("You manage to help them up to their feet, providing your shoulder for support.\n")
         print("Before you can make it to the back exit you hear a BANG!!! \n")
