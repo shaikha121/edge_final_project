@@ -93,8 +93,8 @@ elif answer.lower().strip() == "escape":
         print("....\n")
         print("You turn around finding your team mate laying on the ground motionless;two bullet wounds on their back. \n ")
         print("You look back up finding officers rushing towards you with their guns aiming staright at you. \n")
-        print("Having had no time to grief you grab the straped bag containing some of the money from his shoulder and place it on yours.Causing some of the money to spill from the bag. \n")
-        print("Having no time to retrieve it do the only thing you can think of, you run, trying to make it back to your remaining crew members waiting for you by the get away car out back. \n")
+        print("Having had no time to grief you grab the straped bag containing some of the money from their shoulder and place it on yours.Causing some of the money to spill from the bag. \n")
+        print("Having no time to retrieve it you do the only thing you can think of, you run, trying to make it back to your remaining crew members waiting for you by the get away car out back. \n")
 
 A = Amount()
 A.subtract(random.randrange(10000,500000))
@@ -117,7 +117,7 @@ if answer.lower().strip() == "drive":
     print("Money Now: \n")
     print(A.get_result())
     print()
-    print("before the start of the mission you and your team dicided on two escape options (boat/helicopter) just to be safe. \n")
+    print("Before the start of the mission you and your team decided on two escape options (boat/helicopter) just to be safe. \n")
     print ("which one will you choose?  \n")
     answer = input("Type: boat or helicopter \n")
 
@@ -135,6 +135,7 @@ if answer.lower().strip() == "distract" :
     answer = input("Type: boat or helicopter \n")
 
 if answer.lower().strip() == "boat":
+    print()
     print("You and your team choose to escape using the boat. \n")
     print("You get to the docks and unload all the remaining cash on the boat. \n")
     print("You and your team escape before the cops show up .\n")
@@ -144,6 +145,7 @@ if answer.lower().strip() == "boat":
     exit()
 
 elif answer.lower().strip() == "helicopter" :
+    print()
     print("You and your team choose to escape using the helicopter. \n")
     print("You arrive to the loction and unload the cash. \n")
     print("Before the cops show up you and your crew are able to escape. \n")
