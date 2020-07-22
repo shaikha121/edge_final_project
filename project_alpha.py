@@ -38,7 +38,9 @@ else:
     print()
     print("No...wait...please I promise it will be fun. ")
     exit()
+
 # allows the user to name their own crew members who will be joining them.
+# https://www.edureka.co/blog/input-a-list-in-python/
 crew = input("please insert 3 names seperated by a comma: ")
 print()
 user_crew = crew.split(",")
@@ -119,6 +121,7 @@ elif answer.lower().strip() == "escape":
             print ("which one will you choose?  \n")
             answer = input("Type: boat or helicopter \n")
 
+
             if answer.lower().strip() == "boat":
                 print()
                 print("You and your team choose to escape using the boat. \n")
@@ -152,6 +155,7 @@ elif answer.lower().strip() == "escape":
             print("before the start of the mission you and your team dicided on two escape options (boat/helicopter) just to be safe. \n")
             print ("which one will you choose?  \n")
             answer = input("Type: boat or helicopter \n")
+
 
             if answer.lower().strip() == "boat":
                 print()
@@ -211,6 +215,7 @@ elif answer.lower().strip() == "escape":
             print ("which one will you choose?  \n")
             answer = input("Type: boat or helicopter \n")
 
+
             if answer.lower().strip() == "boat":
                 print()
                 print("You and your team choose to escape using the boat. \n")
@@ -244,6 +249,7 @@ elif answer.lower().strip() == "escape":
             print("before the start of the mission you and your team dicided on two escape options (boat/helicopter) just to be safe. \n")
             print ("which one will you choose?  \n")
             answer = input("Type: boat or helicopter \n")
+
 
             if answer.lower().strip() == "boat":
                 print()
