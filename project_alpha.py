@@ -1,6 +1,7 @@
 from random import randint
 import random
 
+# Class is used to keep track of how much money the user will have throughout the story and at the end.
 class Amount():
     def __init__(self):
         self.result = 2000000
@@ -11,7 +12,7 @@ class Amount():
     def get_result(self):
         return self.result
 
-
+# input is used to allow the user to add in their names.
 print("Hello there,\n")
 
 human_name = ""
@@ -26,6 +27,7 @@ print ("Hello " +person_name+ "\n")
 
 answer = input("Do you want to play? (yes/no): ")
 
+# if functions allow the user to choose how they want the story to go.
 if answer.lower().strip() == "yes":
     print()
     print("Great you will not regret this.... I hope.\n")
@@ -36,7 +38,7 @@ else:
     print()
     print("No...wait...please I promise it will be fun. ")
     exit()
-
+# allows the user to name their own crew members who will be joining them.
 crew = input("please insert 3 names seperated by a comma: ")
 print()
 user_crew = crew.split(",")
@@ -92,6 +94,7 @@ elif answer.lower().strip() == "escape":
         print("You then see the officers rushing towards you with their guns aiming staright at you. \n")
         print("You grab the straped bag containing some of the money off of the floor and place it on your shoulder.Causing some of the money to spill from the bag. \n")
         print("Having no time to retrieve it, you do the only thing you can think of, you run, trying to make it back to your remaining crew members waiting for you by the get away car out back. \n")
+#         how how the money is kept trck of.
         A = Amount()
         A.subtract(random.randrange(10000,500000))
         print("Money Now: \n")
